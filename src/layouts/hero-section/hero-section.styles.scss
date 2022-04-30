@@ -93,6 +93,16 @@ h3 {
   transform: translateX(-50%);
 }
 
+@media screen and (max-width: 1024px) {
+  .oval-background-container {
+    background-position: top 273px left 10%;
+  }
+
+  .light-red-background-container {
+    background-position: top 70% right -20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 52px;
