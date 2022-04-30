@@ -1,20 +1,16 @@
-
-@import 'variables.scss';
+@import "variables.scss";
 
 /* Reset CSS & Default Styles
   ========================================================================== */
 
-  * {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-  body {
-      margin: 0;
-      padding: 0;
-      background-color: $black;
-      color:$white;
-      font-family: Work Sans, sans-serif;      
-
-  }
+body {
+  font-family: Work Sans, sans-serif;
+}

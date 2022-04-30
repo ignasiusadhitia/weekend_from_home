@@ -1,0 +1,13 @@
+@import "../../assets/scss/variables.scss";
+
+.custom-button {
+  width: 231px;
+  height: 58px;
+  background-color: $wkndwhite;
+  color: $wkndblack;
+  border: none;
+  box-shadow: 0px 20px 30px rgba(249, 131, 171, 0.5);
+  border-radius: 29px;
+  font-style: normal;
+  cursor: pointer;
+}
