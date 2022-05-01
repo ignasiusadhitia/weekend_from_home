@@ -18,12 +18,12 @@ h3 {
 }
 
 .hero-container {
-  height: 768px;
+  height: 1359px;
   position: relative;
-  background-color: $wkndpink;
+  // background-color: $wkndpink;
 }
 
-.heading-container {
+.heading-wrapper {
   width: 100%;
   position: absolute;
   z-index: 5;
@@ -34,73 +34,55 @@ h3 {
   color: $wkndwhite;
 }
 
-.black-background-container {
+.background-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 1;
-  background-image: url("../../assets/images/black-path.svg");
+  background-image: url("../../assets/images/BG_1.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top -15px center;
+  background-position: top center;
 }
 
-.blue-background-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  background-image: url("../../assets/images/blue-path.svg");
-  background-repeat: no-repeat;
-  background-position: left 10% top;
-}
-
-.oval-background-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-  background-image: url("../../assets/images/oval.svg");
-  background-repeat: no-repeat;
-  background-position: top 273px left 32%;
-}
-
-.light-red-background-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 4;
-  background-image: url("../../assets/images/very-light-red-path-1.svg");
-  background-repeat: no-repeat;
-  background-position: top 70% left 90%;
-}
-
-.astronout-container {
+.astronout-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 4;
   background-image: url("../../assets/images/astronout-1.svg");
   background-repeat: no-repeat;
-  background-position: center top 70%;
+  background-position: center top 30%;
 }
 
 .custom-button {
   position: absolute;
   z-index: 5;
-  top: 68.5%;
+  top: 38.25%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1024px) {
-  .oval-background-container {
-    background-position: top 273px left 10%;
-  }
+.light-red-background-wrapper {
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  z-index: 1;
+  background-image: url("../../assets/images/very-light-red-path-2.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  transform: translateY(768px);
+}
 
-  .light-red-background-container {
-    background-position: top 70% right -20px;
-  }
+.astronout-wrapper-2 {
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  z-index: 1;
+  background-image: url("../../assets/images/astronout-2.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  transform: translateY(768px);
 }
 
 @media screen and (max-width: 768px) {
@@ -114,22 +96,22 @@ h3 {
     line-height: 18.75px;
   }
 
-  .blue-background-container {
-    background-position: right top;
+  .heading-wrapper {
+    top: 134px;
   }
 
-  .oval-background-container {
-    background-position: top 273px left -66px;
-  }
-
-  .light-red-background-container {
-    display: none;
-  }
-
-  .astronout-container {
-    background-position: center top 80%;
+  .astronout-wrapper {
+    background-position: center top 31%;
   }
   .custom-button {
-    top: 74.5%;
+    top: 39%;
+  }
+
+  .light-red-background-wrapper {
+    transform: translateY(667px);
+  }
+
+  .astronout-wrapper-2 {
+    transform: translateY(667px);
   }
 }
