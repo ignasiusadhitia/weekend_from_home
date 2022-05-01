@@ -5,4 +5,26 @@
   height: 67px;
   background-color: $wkndblue;
   color: $wkndwhite;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $mobile) {
+    margin: auto 24px;
+  }
+}
+.footer-copyright,
+.footer-version {
+  padding: 4px 10px;
+}
+
+.footer-version {
+  border: 1px solid $wkndwhite;
+  border-radius: 29px;
 }

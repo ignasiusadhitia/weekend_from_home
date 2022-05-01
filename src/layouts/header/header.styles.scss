@@ -15,13 +15,12 @@
   width: 100%;
   margin: auto 0;
   display: flex;
+
+  @media screen and (max-width: $mobile) {
+    margin: auto 24px;
+  }
 }
 
-.header-avatar,
 .header-greeting {
-  margin: 6.5px;
-}
-
-.header-greeting {
-  flex-grow: 3;
+  margin: 0 14px;
 }
