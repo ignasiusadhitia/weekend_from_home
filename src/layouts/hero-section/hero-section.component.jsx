@@ -1,5 +1,6 @@
 import React from "react";
 import CustomButton from "../../components/custom-button/custom-button.component";
+import TestimonialSection from "../testimonial-section/testimonial-section.component";
 
 import "./hero-section.styles.scss";
 
@@ -29,6 +30,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="background oval"></div>
+      <TestimonialSection />
     </div>
   );
 };

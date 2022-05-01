@@ -11,13 +11,9 @@
 
 .footer {
   width: 100%;
-  margin: auto 0;
+  margin: auto 24px;
   display: flex;
   justify-content: space-between;
-
-  @media screen and (max-width: $mobile) {
-    margin: auto 24px;
-  }
 }
 .footer-copyright,
 .footer-version {
