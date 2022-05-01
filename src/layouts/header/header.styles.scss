@@ -7,4 +7,21 @@
   z-index: 10;
   background-color: $wkndwhite;
   color: $wkndblack;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+}
+
+.header-avatar,
+.header-greeting {
+  margin: 6.5px;
+}
+
+.header-greeting {
+  flex-grow: 3;
 }

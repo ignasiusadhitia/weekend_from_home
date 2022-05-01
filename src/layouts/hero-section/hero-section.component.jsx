@@ -17,9 +17,9 @@ const HeroSection = () => {
       <div className="background astronout-2"></div>
 
       <div className="paragraph-wrapper quote-wrapper">
-        <div className="paragraph-width medium">
+        <div className="max-width-2 medium">
           <p className="text-black">
-            <span className="bold text-blue">Deffinition;</span> a practice or
+            <span className="bold-1 text-blue">Deffinition;</span> a practice or
             exercise to test or improve one's fitness for athletic competition,
             ability, or performance to exhaust (something, such as a mine) by
             working to devise, arrange, or achieve by resolving difficulties.
