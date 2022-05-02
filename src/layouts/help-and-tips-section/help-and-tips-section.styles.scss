@@ -1,0 +1,41 @@
+@import "../../assets/scss/variables.scss";
+
+.help-and-tips-container {
+  width: 100%;
+  background-color: $wkndblack;
+  color: $wkndwhite;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.help-and-tips-wrapper {
+  width: 100%;
+  margin: 33.5px 32px;
+  z-index: 2;
+}
+
+.help-and-tips-heading {
+  text-align: center;
+
+  @media screen and (max-width: $mobile) {
+    text-align: left;
+  }
+}
+
+.help-and-tips-posts-list {
+  margin-top: 30px;
+  height: 176px;
+  background-color: $wkndwhite;
+}
+
+.light-red-2 {
+  max-width: 1152px;
+  margin: 32px;
+  background-image: url("../../assets/images/very-light-red-path-3.svg");
+  background-position: top right;
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../assets/scss/variables.scss";
+
+.pov-and-resource-section-container {
+  width: 100%;
+  background-color: $wkndblack;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph-item-container {
+  width: 100%;
+  padding: 157.5px 0 33px 0;
+}
+
+.paragraph-item-wrapper {
+  margin: 33.5px 0;
+}

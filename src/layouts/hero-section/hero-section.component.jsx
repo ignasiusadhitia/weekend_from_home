@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="background astronout-2"></div>
 
       <div className="paragraph-wrapper quote-wrapper">
-        <div className="max-width-2 medium">
+        <div className="max-width-3 medium">
           <p className="text-black">
             <span className="bold-1 text-blue">Deffinition;</span> a practice or
             exercise to test or improve one's fitness for athletic competition,

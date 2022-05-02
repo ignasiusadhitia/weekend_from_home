@@ -1,15 +1,16 @@
 @import "../../assets/scss/variables.scss";
 
-.bottom-page-item {
+.paragraph-item {
   position: relative;
   z-index: 2;
   text-align: center;
 
   @media screen and (max-width: $mobile) {
     text-align: left;
+    padding: 0;
   }
 }
 
-.bottom-page-item-paragraph-margin {
-  margin: 30px 0;
+.paragraph-item-padding {
+  padding: 30px 0;
 }

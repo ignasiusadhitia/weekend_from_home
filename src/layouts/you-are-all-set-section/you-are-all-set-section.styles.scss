@@ -1,36 +1,20 @@
 @import "../../assets/scss/variables.scss";
 
-.bottom-page-container {
+.you-are-all-set-section-container {
+  width: 100%;
   background-color: $wkndblack;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.bottom-page {
-  margin-top: 191px;
-}
-
-.bottom-page-item-resource {
-  margin-top: 37px;
-}
-
-.bottom-page-item-help-and-tips {
-  margin-top: 70px;
-}
-
-.posts-wrapper {
-  margin: 30px 0;
-  height: 176px;
-  background-color: $wkndwhite;
-}
-
-.bottom-page-item-you-are-all-set {
-  margin-top: 67px;
-  margin-bottom: 203px;
+.paragraph-item-container-2 {
+  width: 100%;
+  padding: 60px 0 139.5px 0;
 
   @media screen and (max-width: $laptop) {
-    margin-bottom: 374px;
+    margin-top: 1.5px;
+    padding: 0 0 340.5px 0;
   }
 }
 
