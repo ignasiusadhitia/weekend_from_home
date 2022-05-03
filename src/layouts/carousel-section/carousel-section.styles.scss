@@ -1,0 +1,42 @@
+@import "../../assets/scss/variables.scss";
+
+.carousel-section-container {
+  max-width: 735px;
+  height: 100%;
+  margin: auto;
+  //   background-color: $wkndpink;
+  display: flex;
+}
+
+.arrow-wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.arrow {
+  width: 32px;
+}
+
+.carousel-item-wrapper {
+  width: 100%;
+  margin: 0 25px;
+  padding: 25px 0 29px 25px;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 10px;
+
+  overflow: hidden;
+
+  @media screen and (max-width: $tablet) {
+    margin: 0;
+    padding: 25px 0 29px 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+}
