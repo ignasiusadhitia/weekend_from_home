@@ -21,13 +21,18 @@
   width: 32px;
 }
 
+.previous-arrow-active {
+  transform: rotate(180deg);
+}
+
+.next-arrow-inactive {
+  transform: rotate(0deg);
+}
+
 .carousel-item-wrapper {
   width: 100%;
   margin: 0 25px;
   padding: 25px 0 29px 25px;
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 10px;
 
   overflow: hidden;
 
@@ -39,4 +44,23 @@
   @media screen and (max-width: $mobile) {
     width: 100%;
   }
+}
+
+.carousel-item-content {
+  display: flex;
+  //   flex-direction: row;
+  gap: 10px;
+  transition: all 250ms linear;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-item-content::-webkit-scrollbar,
+.carousel-item-content::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item-content > * {
+  flex-shrink: 0;
+  flex-grow: 1;
 }
