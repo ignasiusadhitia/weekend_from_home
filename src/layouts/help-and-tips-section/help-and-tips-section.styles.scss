@@ -26,8 +26,6 @@
 .help-and-tips-item-wrapper {
   margin-top: 25px;
   padding: 5px 0;
-  // height: 186px;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
@@ -40,6 +38,12 @@
   @media screen and (max-width: $mobile) {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.error-item-wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .light-red-2 {

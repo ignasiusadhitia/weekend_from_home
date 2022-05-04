@@ -4,7 +4,6 @@
   max-width: 735px;
   height: 100%;
   margin: auto;
-  //   background-color: $wkndpink;
   display: flex;
 }
 
@@ -52,7 +51,6 @@
 
 .carousel-item-content {
   display: flex;
-  //   flex-direction: row;
   gap: 10px;
   transition: all 250ms linear;
   -ms-overflow-style: none;

@@ -3,12 +3,13 @@ import CarouselItem from "../../components/carousel-item/carousel-item.component
 import leftArrow from "../../assets/images/arrow-inactive.svg";
 import rightArrow from "../../assets/images/arrow-active.svg";
 import "./carousel-section.styles.scss";
-import axios from "axios";
+import ErrorItem from "../../components/error-item/error-item.component";
+import { getTestimonials } from "../../services/getTestimonials";
 
 const CarouselSection = () => {
   const [testimonialData, setTestimonialData] = useState([]);
-  // const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const [currentCarouselItemIndex, setCurrentCarouselItemIndex] = useState(0);
   const [carouselItemsLength, setCarouselItemsLength] = useState(
@@ -17,19 +18,20 @@ const CarouselSection = () => {
 
   useEffect(() => {
     const fetchTestimonialData = async () => {
-      try {
-        // setLoading(true);
-        const response = await axios.get(
-          "https://wknd-take-home-challenge-api.herokuapp.com/testimonial"
-        );
-        setTestimonialData(response.data);
-        // setLoading(false);
-      } catch (error) {
-        console.error(error);
-        // setError(true);
-        // setLoading(false);
+      setLoading(true);
+
+      const response = await getTestimonials();
+
+      if (!response) {
+        setLoading(false);
+        setError(true);
+
+        return;
       }
+      setLoading(false);
+      setTestimonialData(response.data);
     };
+
     fetchTestimonialData();
   }, []);
 
@@ -99,20 +101,23 @@ const CarouselSection = () => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
       >
-        <div
-          className="carousel-item-content"
-          style={{
-            transform: `translateX(-${currentCarouselItemIndex * 255}px)`,
-          }}
-        >
-          {testimonialData.map((testimonialItem, index) => (
-            <CarouselItem
-              key={index}
-              carouselItemTitle={testimonialItem.by}
-              carouselItemParagraph={testimonialItem.testimony}
-            />
-          ))}
-        </div>
+        {error && <ErrorItem />}
+        {!loading && testimonialData.length > 0 && (
+          <div
+            className="carousel-item-content"
+            style={{
+              transform: `translateX(-${currentCarouselItemIndex * 255}px)`,
+            }}
+          >
+            {testimonialData.map((testimonialItem, index) => (
+              <CarouselItem
+                key={index}
+                carouselItemTitle={testimonialItem.by}
+                carouselItemParagraph={testimonialItem.testimony}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="arrow-wrapper">
