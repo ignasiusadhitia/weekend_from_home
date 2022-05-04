@@ -3,6 +3,8 @@
 .hero-container {
   height: 1359px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .heading-wrapper {
@@ -38,8 +40,6 @@
   position: absolute;
   z-index: 5;
   top: 38.25%;
-  left: 50%;
-  transform: translateX(-50%);
 
   @media screen and (max-width: $mobile) {
     top: 39%;

@@ -1,0 +1,48 @@
+@import "../../assets/scss/variables.scss";
+
+.loading-page-container {
+  width: 100vw;
+  height: 100vh;
+  background: $wkndblack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-red-shape-wrapper {
+  width: 80%;
+  height: 80%;
+  background-image: url("../../assets/images/very-light-red-path-1.svg");
+  background-size: 10%;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  animation: getting-larger 1.5s alternate infinite ease-in;
+
+  @media screen and (max-width: $tablet) {
+    background-size: 20%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    background-size: 55%;
+  }
+}
+
+.loading-page-heading-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+}
+
+@keyframes getting-larger {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

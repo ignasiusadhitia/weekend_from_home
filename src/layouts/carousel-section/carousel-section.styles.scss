@@ -21,12 +21,16 @@
   width: 32px;
 }
 
-.previous-arrow-active {
-  transform: rotate(180deg);
+.arrow-active {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.next-arrow-inactive {
-  transform: rotate(0deg);
+.rotate-arrow {
+  transform: rotate(180deg);
 }
 
 .carousel-item-wrapper {

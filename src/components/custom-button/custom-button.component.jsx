@@ -3,7 +3,7 @@ import "./custom-button.styles.scss";
 
 const CustomButton = ({ buttonText }) => {
   return (
-    <div>
+    <div className="custom-button-container">
       <button className="custom-button">{buttonText}</button>
     </div>
   );

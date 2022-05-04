@@ -6,25 +6,25 @@ import "./help-and-tips-section.styles.scss";
 
 const HelpAndTipsSection = () => {
   const [helpAndTipsData, setHelpAndTipsData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchHelpAndTipsData = async () => {
       try {
-        setLoading(true);
+        // setLoading(true);
 
         const response = await axios.get(
           "https://wknd-take-home-challenge-api.herokuapp.com/help-tips"
         );
         setHelpAndTipsData(response.data);
 
-        setLoading(false);
+        // setLoading(false);
       } catch (error) {
         console.error(error);
 
-        setError(true);
-        setLoading(false);
+        // setError(true);
+        // setLoading(false);
       }
     };
     fetchHelpAndTipsData();

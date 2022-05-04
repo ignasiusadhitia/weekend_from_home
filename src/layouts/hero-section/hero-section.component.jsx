@@ -13,7 +13,9 @@ const HeroSection = () => {
         <p className="p semi-bold-italic">Stay active with a little workout.</p>
       </div>
       <div className="background astronout-1"></div>
+
       <CustomButton buttonText="Let's Go" className="custom-button" />
+
       <div className="background light-red-1"></div>
       <div className="background astronout-2"></div>
 

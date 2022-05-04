@@ -7,8 +7,8 @@ import axios from "axios";
 
 const CarouselSection = () => {
   const [testimonialData, setTestimonialData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(false);
 
   const [currentCarouselItemIndex, setCurrentCarouselItemIndex] = useState(0);
   const [carouselItemsLength, setCarouselItemsLength] = useState(
@@ -18,16 +18,16 @@ const CarouselSection = () => {
   useEffect(() => {
     const fetchTestimonialData = async () => {
       try {
-        setLoading(true);
+        // setLoading(true);
         const response = await axios.get(
           "https://wknd-take-home-challenge-api.herokuapp.com/testimonial"
         );
         setTestimonialData(response.data);
-        setLoading(false);
-      } catch {
+        // setLoading(false);
+      } catch (error) {
         console.error(error);
-        setError(true);
-        setLoading(false);
+        // setError(true);
+        // setLoading(false);
       }
     };
     fetchTestimonialData();
@@ -78,12 +78,21 @@ const CarouselSection = () => {
   return (
     <div className="carousel-section-container">
       <div className="arrow-wrapper">
-        <img
-          src={leftArrow}
-          alt="to the previous carousel item"
-          className="arrow"
-          onClick={previousCarouselItem}
-        />
+        {currentCarouselItemIndex === 0 ? (
+          <img
+            src={leftArrow}
+            alt="to the previous carousel item"
+            className="arrow"
+            onClick={previousCarouselItem}
+          />
+        ) : (
+          <img
+            src={rightArrow}
+            alt="to the previous carousel item"
+            className="arrow rotate-arrow arrow-active"
+            onClick={previousCarouselItem}
+          />
+        )}
       </div>
       <div
         className="carousel-item-wrapper"
@@ -107,12 +116,21 @@ const CarouselSection = () => {
       </div>
 
       <div className="arrow-wrapper">
-        <img
-          src={rightArrow}
-          alt="to the next carousel item"
-          className="arrow"
-          onClick={nextCarouselItem}
-        />
+        {currentCarouselItemIndex === carouselItemsLength - 1 ? (
+          <img
+            src={leftArrow}
+            alt="to the next carousel item"
+            className="arrow rotate-arrow"
+            onClick={nextCarouselItem}
+          />
+        ) : (
+          <img
+            src={rightArrow}
+            alt="to the next carousel item"
+            className="arrow arrow-active"
+            onClick={nextCarouselItem}
+          />
+        )}
       </div>
     </div>
   );

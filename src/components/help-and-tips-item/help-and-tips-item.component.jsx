@@ -1,5 +1,4 @@
 import React from "react";
-import helpAndTipsItemImage2 from "../../assets/images/help-and-tips-image.jpg";
 import arrowImage from "../../assets/images/arrow-active.svg";
 import "./help-and-tips-item.styles.scss";
 
