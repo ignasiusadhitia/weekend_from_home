@@ -3,7 +3,7 @@
 <div align="center"> 
   <div>
     <a href="https://github.com/ignasiusadhitia/weekend_from_home">    
-      <img src="public/assets/images/screenshot.png" alt="logo">
+      <img src="src/assets/images/astronout-1.svg" alt="logo">
     </a>
   </div>
   
@@ -45,7 +45,8 @@
     </li>    
     <li><a href="#project-files-structure">Project Files Structure</a></li>  
     <li><a href="#project-links">Project Links</a></li>
-    <li><a href="#contact">Contact</a></li>         
+    <li><a href="#contact">Contact</a></li>   
+    <li><a href="#acknowledgments">Acknowledgments</a></li>       
   </ol>
 </details>
 
@@ -54,6 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+[![wknd from_home ][product-screenshot]](https://ignasiusadhitia.github.io/weekend_from_home)
 
 WKND from home is a company website. It has a complete design and is fully responsive (mobile first). There are several features on the page such as:
 
@@ -137,6 +139,7 @@ src/
 ┃ ┃ ┣ BG_1.svg
 ┃ ┃ ┣ help-and-tips-image.jpg
 ┃ ┃ ┣ oval.svg
+┃ ┃ ┣ screenshot.png
 ┃ ┃ ┣ very-light-red-path-1.svg
 ┃ ┃ ┣ very-light-red-path-2.svg
 ┃ ┃ ┣ very-light-red-path-3.svg
@@ -226,7 +229,17 @@ Ignasius Yuda Adhitia - [Github](https://github.com/ignasiusadhitia/) - [Gitlab]
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [How to Make a Simple React Carousel](https://dev.to/rakumairu/simple-react-carousel-24m0)
+* [CSS Button With Hover Effect](https://codepen.io/avvign/pen/NVJzQW)
+* [Glasmorphism Generator](https://hype4.academy/tools/glassmorphism-generator)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: media/screenshot.png
+[product-screenshot]: src/assets/images/screenshot.png
 
 
