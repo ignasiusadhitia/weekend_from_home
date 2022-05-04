@@ -53,11 +53,7 @@
   transition: all 250ms linear;
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.carousel-item-content::-webkit-scrollbar,
-.carousel-item-content::-webkit-scrollbar {
-  display: none;
+  scroll-behavior: smooth;
 }
 
 .carousel-item-content > * {

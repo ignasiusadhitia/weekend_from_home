@@ -4,8 +4,8 @@ import arrowImage from "../../assets/images/arrow-active.svg";
 import "./help-and-tips-item.styles.scss";
 
 const HelpAndTipsItem = ({
-  helpAndTipsItemImage = helpAndTipsItemImage2,
-  helpAndTipsItemTitle = "Start quickly with simple steps",
+  helpAndTipsItemImage,
+  helpAndTipsItemTitle,
   helpAndTipsItemLink,
 }) => {
   return (

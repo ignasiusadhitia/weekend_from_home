@@ -17,6 +17,11 @@
   display: flex;
 }
 
+.header-avatar {
+  display: flex;
+  justify-content: space-around;
+}
+
 .header-greeting {
   margin: 0 14px;
 }

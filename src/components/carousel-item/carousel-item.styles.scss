@@ -1,0 +1,20 @@
+@import "../../assets/scss/variables.scss";
+
+.carousel-item-container {
+  width: 247px;
+  height: 140px;
+  padding: 20px;
+  background-color: $wkndwhite;
+}
+
+.carousel-item-title-wrapper,
+.carousel-item-paragraph-wrapper {
+  width: 100%;
+}
+
+.carousel-item-paragraph-wrapper {
+  margin-top: 15px;
+  height: 53px;
+  text-overflow: clip;
+  overflow: hidden;
+}

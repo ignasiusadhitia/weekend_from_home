@@ -3,17 +3,39 @@ import CarouselItem from "../../components/carousel-item/carousel-item.component
 import leftArrow from "../../assets/images/arrow-inactive.svg";
 import rightArrow from "../../assets/images/arrow-active.svg";
 import "./carousel-section.styles.scss";
+import axios from "axios";
 
 const CarouselSection = () => {
-  const childrenArray = [0, 1, 2, 3];
+  const [testimonialData, setTestimonialData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
   const [currentCarouselItemIndex, setCurrentCarouselItemIndex] = useState(0);
   const [carouselItemsLength, setCarouselItemsLength] = useState(
-    childrenArray.length
+    testimonialData.length
   );
 
   useEffect(() => {
-    setCarouselItemsLength(childrenArray.length);
-  }, [childrenArray]);
+    const fetchTestimonialData = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(
+          "https://wknd-take-home-challenge-api.herokuapp.com/testimonial"
+        );
+        setTestimonialData(response.data);
+        setLoading(false);
+      } catch {
+        console.error(error);
+        setError(true);
+        setLoading(false);
+      }
+    };
+    fetchTestimonialData();
+  }, []);
+
+  useEffect(() => {
+    setCarouselItemsLength(testimonialData.length);
+  }, [testimonialData]);
 
   const nextCarouselItem = () => {
     if (currentCarouselItemIndex < carouselItemsLength - 1) {
@@ -71,13 +93,16 @@ const CarouselSection = () => {
         <div
           className="carousel-item-content"
           style={{
-            transform: `translateX(-${currentCarouselItemIndex * 247}px)`,
+            transform: `translateX(-${currentCarouselItemIndex * 255}px)`,
           }}
         >
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
+          {testimonialData.map((testimonialItem, index) => (
+            <CarouselItem
+              key={index}
+              carouselItemTitle={testimonialItem.by}
+              carouselItemParagraph={testimonialItem.testimony}
+            />
+          ))}
         </div>
       </div>
 

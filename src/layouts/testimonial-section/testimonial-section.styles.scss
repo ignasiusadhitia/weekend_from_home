@@ -11,12 +11,19 @@
   justify-content: center;
 
   @media screen and (max-width: $mobile) {
+    margin-right: 0;
     top: 1202px;
   }
 }
 
 .testimonial-wrapper {
   width: 100%;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    padding-left: 32px;
+    margin: 37px 0 0 0;
+  }
 }
 
 .testimonial-heading {
@@ -28,6 +35,9 @@
 }
 
 .testimonial-slider {
+  width: 100%;
   height: 194px;
-  background-color: $wkndwhite;
+
+  // background-color: $wkndblue;
+  color: $wkndblack;
 }

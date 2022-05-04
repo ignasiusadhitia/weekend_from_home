@@ -23,10 +23,23 @@
   }
 }
 
-.help-and-tips-posts-list {
-  margin-top: 30px;
-  height: 176px;
-  background-color: $wkndwhite;
+.help-and-tips-item-wrapper {
+  margin-top: 25px;
+  padding: 5px 0;
+  // height: 186px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .light-red-2 {
