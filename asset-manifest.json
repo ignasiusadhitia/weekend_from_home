@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/weekend_from_home/static/css/main.d6b7ae6e.css",
+    "main.js": "/weekend_from_home/static/js/main.40f16480.js",
+    "static/js/787.e355c67d.chunk.js": "/weekend_from_home/static/js/787.e355c67d.chunk.js",
+    "static/media/astronout-2.svg": "/weekend_from_home/static/media/astronout-2.54a38d61c9e10b00cf9b.svg",
+    "static/media/astronout-3.svg": "/weekend_from_home/static/media/astronout-3.4b9dc17faeaaec266dc3.svg",
+    "static/media/astronout-1.svg": "/weekend_from_home/static/media/astronout-1.9b1e1d937b6e74dadb28.svg",
+    "static/media/avatar.svg": "/weekend_from_home/static/media/avatar.1b4d6691bf354d25a9157e47eb6602db.svg",
+    "static/media/arrow-inactive.svg": "/weekend_from_home/static/media/arrow-inactive.9caaf3d0c1462be400f8785978c103dc.svg",
+    "static/media/arrow-active.svg": "/weekend_from_home/static/media/arrow-active.ec72b50f1398d1d3fa6a972c6b494b79.svg",
+    "index.html": "/weekend_from_home/index.html",
+    "static/media/BG_1.svg": "/weekend_from_home/static/media/BG_1.833aec27667d8bc4deb1.svg",
+    "static/media/very-light-red-path-3.svg": "/weekend_from_home/static/media/very-light-red-path-3.77d0d1a32f33427316ec.svg",
+    "static/media/very-light-red-path-1.svg": "/weekend_from_home/static/media/very-light-red-path-1.8083e5a2c054daaaea2d.svg",
+    "static/media/very-light-red-path-4.svg": "/weekend_from_home/static/media/very-light-red-path-4.e0b56bd9006eac7b4d70.svg",
+    "static/media/very-light-red-path-2.svg": "/weekend_from_home/static/media/very-light-red-path-2.ae1b5006def21769355c.svg",
+    "static/media/oval.svg": "/weekend_from_home/static/media/oval.c004d55dfe31aa7516f9.svg",
+    "main.d6b7ae6e.css.map": "/weekend_from_home/static/css/main.d6b7ae6e.css.map",
+    "main.40f16480.js.map": "/weekend_from_home/static/js/main.40f16480.js.map",
+    "787.e355c67d.chunk.js.map": "/weekend_from_home/static/js/787.e355c67d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6b7ae6e.css",
+    "static/js/main.40f16480.js"
+  ]
+}
