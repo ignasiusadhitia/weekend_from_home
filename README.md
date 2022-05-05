@@ -75,7 +75,7 @@ WKND from home is a company website which has a complete design and is fully res
 
 ### Built With
 
-This Simple Slider project was built with [React.js](https://reactjs.org/) and [SCSS](https://sass-lang.com/).
+This WKND From Home project was built with [React.js](https://reactjs.org/) and [SCSS](https://sass-lang.com/).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
