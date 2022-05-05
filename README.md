@@ -57,7 +57,7 @@
 
 [![wknd from_home ][product-screenshot]](https://ignasiusadhitia.github.io/weekend_from_home)
 
-WKND from home is a company website. It has a complete design and is fully responsive (mobile first). There are several features on the page such as:
+WKND from home is a company website which has a complete design and is fully responsive (mobile first). There are several features on the page such as:
 
 - **Loading Screen**: A loading screen is displayed when the page is loading.
 - **Header**: A fixed header with a logo and a user name.
